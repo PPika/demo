@@ -7,6 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="55*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="442*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas Grid.Column="1" Margin="7,6,8,7" Grid.Row="1" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" OpacityMask="#FF723333"/>
         
+        <Button x:Name="button" Content="打开文件" Grid.Column="1" HorizontalAlignment="Right" Margin="0,9.212,19,7.445" Click="button_Click" FontFamily="KaiTi" FontWeight="Normal" Width="70.5"/>
+        <TextBox x:Name="textBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="25,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="290"/>
+
+        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="0,3,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button1_Copy1" Content="Button" HorizontalAlignment="Left" Margin="0,79,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button1_Copy2" Content="Button" HorizontalAlignment="Left" Margin="0,152,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button1_Copy3" Content="Button" HorizontalAlignment="Left" Margin="0,228,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+
     </Grid>
 </Window>
